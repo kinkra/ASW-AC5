@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block metainfo %}
+<title>Todo</title>
+{% endblock %}
+
+{% block content %}
+<div id="container">
+    <form method="post">
+        <label for="desc">Todo</label>
+        <input type="text" name="desc" id="desc">
+        <br>
+        <button type="submit">Create Todo</button>
+    </form>
+</div>
+{% endblock %}

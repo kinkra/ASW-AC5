@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block metainfo %}
+<title>My Todos</title>
+{% endblock %}
+
+{% block content %}
+<div id="container">
+    <h1>Todo List Page</h1>
+    <div id="Todolist">
+        {% for i in lista %}
+            <p>{{ i }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
